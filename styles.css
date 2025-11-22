@@ -1,43 +1,65 @@
-*{
-    padding: 0;
+
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-h1{
-    color: rgb(6, 152, 201);
-    font-family: helvetica;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+
+.header {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: var(--white);
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
 }
-h1:hover{
-    text-decoration: underline;
+
+.portfolio-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
-h2,h3,h4{
-    font-size: 2rem;
-    color: rgb(9, 15, 206);
-    letter-spacing: 1.3px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
+
+.portfolio-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
 }
-h2:hover{
-    text-decoration: underline;
-}
-.img{
+
+.navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 1rem;
 }
-img{
-    width: 50%;
-    height: 50%;
-    border-radius: 10%;
-    border: 2px solid rgb(18, 18, 18);
-    
-}
-li,ol,dd{
-    margin: 10px 10px;
-}
-li,a{
-    text-decoration: none;
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }

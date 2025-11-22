@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Valentino Lohay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="portfolio-title">Valentino Lohay</h1>
+            <p class="portfolio-subtitle">Web Developer & Designer</p>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="https://via.placeholder.com/200x200?text=Profile+Photo" alt="Profile photo of John Doe" class="profile-image">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm a passionate web developer and designer with a strong interest in creating beautiful and functional digital experiences. 
+                        With expertise in HTML, CSS, JavaScript, and modern frameworks, I love turning ideas into reality through clean code and intuitive design.
+                    </p>
+                    <p>
+                        I have a keen eye for detail and a commitment to delivering high-quality work. Whether it's building responsive websites, 
+                        designing user interfaces, or solving complex problems, I bring enthusiasm and dedication to every project.
+                    </p>
+                    <p>
+                        In my free time, I enjoy exploring new technologies, contributing to open-source projects, and continuously improving my skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <figure class="project-figure">
+                        <img src="https://via.placeholder.com/400x300?text=E-Commerce+Website" alt="E-commerce website project screenshot">
+                        <figcaption>E-Commerce Website</figcaption>
+                    </figure>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>
+                            A fully responsive e-commerce platform built with HTML, CSS, and JavaScript. Features include product filtering, 
+                            shopping cart functionality, and a clean checkout process. The site is optimized for mobile and desktop devices.
+                        </p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <figure class="project-figure">
+                        <img src="https://via.placeholder.com/400x300?text=Task+Management+App" alt="Task management application screenshot">
+                        <figcaption>Task Management App</figcaption>
+                    </figure>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>
+                            An interactive task management application that allows users to create, edit, and organize tasks. 
+                            Built with vanilla JavaScript and featuring a clean, minimalist interface with local storage persistence.
+                        </p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <figure class="project-figure">
+                        <img src="https://via.placeholder.com/400x300?text=Weather+App" alt="Weather application with forecasts">
+                        <figcaption>Weather Application</figcaption>
+                    </figure>
+                    <div class="project-content">
+                        <h3>Weather Application</h3>
+                        <p>
+                            A weather app that fetches real-time data from a public API and displays current weather, forecasts, and location information. 
+                            Features a beautiful UI with weather icons and responsive design.
+                        </p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <p class="contact-intro">Have a project in mind or just want to chat? Feel free to reach out!</p>
+            
+            <form class="contact-form" method="POST" action="#submit">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your full name" 
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your.email@example.com" 
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="What is this about?" 
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="6" 
+                        placeholder="Write your message here..." 
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+        <p>
+            <a href="#about">About</a> | 
+            <a href="#projects">Projects</a> | 
+            <a href="#contact">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
