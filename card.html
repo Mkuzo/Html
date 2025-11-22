@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+        :root {
+            --card-width: 300px;
+            --card-gap: 20px;
+            --card-padding: 16px;
+            --card-border: 1px solid #ddd;
+            --card-radius: 8px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 24px;
+            background: #f7f9fb;
+            color: #222;
+        }
+
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 18px; }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--card-gap);
+            justify-content: center; /* center cards horizontally */
+            align-items: center;     /* center cards vertically within row */
+            padding: 12px;
+        }
+
+        .card {
+            width: var(--card-width);
+            background: #fff;
+            padding: var(--card-padding);
+            border: var(--card-border);
+            border-radius: var(--card-radius);
+            box-shadow: 0 2px 6px rgba(27,31,35,0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 12px 0 8px 0;
+            font-size: 1.1rem;
+            color: #1f3a57;
+        }
+
+        .card p {
+            margin: 0 0 12px 0;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .card .actions {
+            margin-top: auto; /* push actions to bottom */
+            display: flex;
+            justify-content: center;
+        }
+
+        .card .actions button {
+            padding: 8px 12px;
+            border: none;
+            background: #2c7be5;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Media queries to adjust card width on smaller screens */
+        @media (max-width: 1000px) {
+            :root { --card-width: 45%; }
+            .card { width: calc(45% - var(--card-gap)); }
+        }
+
+        @media (max-width: 700px) {
+            :root { --card-width: 100%; }
+            .card { width: 100%; }
+            .card-container { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Card Layout (Flexbox)</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/600x360?text=Image+1" alt="Placeholder Image 1">
+            <h3>Card Title 1</h3>
+            <p>Short description for card one. This card demonstrates a fixed width, padding, border and an image.</p>
+            <div class="actions"><button>View</button></div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/600x360?text=Image+2" alt="Placeholder Image 2">
+            <h3>Card Title 2</h3>
+            <p>Another sample card. Flexbox will wrap cards to the next row when there isn't enough horizontal space.</p>
+            <div class="actions"><button>View</button></div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/600x360?text=Image+3" alt="Placeholder Image 3">
+            <h3>Card Title 3</h3>
+            <p>Cards are centered using <code>justify-content</code> and vertically aligned with <code>align-items</code>.</p>
+            <div class="actions"><button>View</button></div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/600x360?text=Image+4" alt="Placeholder Image 4">
+            <h3>Card Title 4</h3>
+            <p>Responsive breakpoints change card sizing: wide, medium, and stacked for narrow screens.</p>
+            <div class="actions"><button>View</button></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
