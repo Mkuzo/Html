@@ -1,0 +1,54 @@
+/* Keyframe Animation: Move box horizontally from left to right and back */
+@keyframes slideBox {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    75% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Box Styling */
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #3498db;
+    border: 5px solid #2c3e50;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    
+    /* Flexbox: Center the text inside the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Apply the animation */
+    animation: slideBox 4s ease-in-out infinite;
+    
+    /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: scale(1.1);
+    background-color: #e74c3c;
+}
+
+/* H1 inside the box */
+.box h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

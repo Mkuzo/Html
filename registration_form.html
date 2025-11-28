@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Enhanced with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+   <h1>Registration Form</h1>
+
+    <div class="confirmation-message" id="confirmationMessage"></div>
+
+    <form method="POST" action="/submit-registration" id="registrationForm">
+
+        <!-- Personal Details Fieldset -->
+        <fieldset id="personalFieldset">
+            <legend>Personal Details</legend>
+
+            <label for="fullname">Full Name</label>
+            <input 
+                type="text" 
+                id="fullname" 
+                name="fullname" 
+                placeholder="Enter your full name" 
+                required>
+
+            <label for="email">Email Address</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                required>
+            <div class="validation-message" id="emailMessage"></div>
+
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password (min 8 chars, 1 uppercase, 1 number)" 
+                required>
+            <div class="password-criteria" id="passwordCriteria">
+                <div class="criteria-item" id="lengthCriteria">At least 8 characters</div>
+                <div class="criteria-item" id="uppercaseCriteria">At least 1 uppercase letter</div>
+                <div class="criteria-item" id="numberCriteria">At least 1 number</div>
+            </div>
+        </fieldset>
+
+        <!-- Preferences Fieldset -->
+        <fieldset id="preferencesFieldset">
+            <legend>Preferences</legend>
+
+            <label for="favoritecolor">Favorite Color</label>
+            <input 
+                type="color" 
+                id="favoritecolor" 
+                name="favoritecolor">
+
+            <label>Favorite Food</label>
+            <div class="checkbox-group">
+                <div class="checkbox-option">
+                    <input 
+                        type="checkbox" 
+                        id="pizza" 
+                        name="favoritefood" 
+                        value="Pizza">
+                    <label for="pizza">Pizza</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input 
+                        type="checkbox" 
+                        id="burger" 
+                        name="favoritefood" 
+                        value="Burger">
+                    <label for="burger">Burger</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input 
+                        type="checkbox" 
+                        id="salad" 
+                        name="favoritefood" 
+                        value="Salad">
+                    <label for="salad">Salad</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input 
+                        type="checkbox" 
+                        id="sushi" 
+                        name="favoritefood" 
+                        value="Sushi">
+                    <label for="sushi">Sushi</label>
+                </div>
+    </script>
+
+</body>
+</html>

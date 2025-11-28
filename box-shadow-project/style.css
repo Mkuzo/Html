@@ -1,0 +1,64 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Box Styling Requirements (ALL boxes) */
+.basic-shadow,
+.multi-shadow,
+.inset-shadow,
+.blur-spread,
+.color-shadow,
+.my-shadow {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Specific Shadows For Each Box */
+
+/* 1. .basic-shadow */
+.basic-shadow {
+    box-shadow: 5px 5px 10px #888;
+}
+
+/* 2. .multi-shadow (two shadows) */
+.multi-shadow {
+    box-shadow: 5px 5px 10px #555, -5px -5px 15px #bbb;
+}
+
+/* 3. .inset-shadow (inset) */
+.inset-shadow {
+    box-shadow: inset 0px 0px 15px #444;
+}
+
+/* 4. .blur-spread (blur 20px, spread 10px) */
+.blur-spread {
+    box-shadow: 0px 0px 20px 10px #999;
+}
+
+/* 5. .color-shadow (colored shadow) */
+.color-shadow {
+    box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.5);
+}
+
+/* 6. .my-shadow (student design: must include colored shadow, spread, and blur) */
+.my-shadow {
+    /* colored shadow with blur and spread */
+    box-shadow: 0px 10px 15px 5px rgba(255, 100, 50, 0.5);
+}
